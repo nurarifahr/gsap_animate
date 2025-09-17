@@ -1,6 +1,7 @@
 import React from 'react'
 import { navLinks } from '../../constant/index.js'
 import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 const Navbar = () => {
     useGSAP(()=>{
@@ -12,7 +13,7 @@ const Navbar = () => {
         });
 
         navTween.fromTo('nav', { backgroundColor: 'transparent'}, {
-            backgroundColor: '#0000050',
+            backgroundColor: '#00000050',
             backgroundFilter: 'blur(10px)',
             duration: 1,
             ease: 'power1.inOut'
